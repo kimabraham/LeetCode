@@ -19,7 +19,8 @@ class Solution {
         } else {
             if(map[bracket] == stack.last) {
                 stack.removeLast();
-                continue;
+            }else{
+                stack.add(bracket);
             }
         }
     }
