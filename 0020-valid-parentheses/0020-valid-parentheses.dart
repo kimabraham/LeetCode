@@ -1,13 +1,14 @@
-final Map<String, String> map = {
-    ')':'(',
-    '}':'{',
-    ']':'[',
-};
+
 
 class Solution {
   bool isValid(String s) {
-        final List<String> stack = [];
-    
+    final List<String> stack = [];
+    final Map<String, String> map = {
+        ')':'(',
+        '}':'{',
+        ']':'[',
+    };
+
     for (var bracket in s.split('')) {
       if (map.containsValue(bracket)) {
         stack.add(bracket);
